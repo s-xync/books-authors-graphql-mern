@@ -3,8 +3,12 @@ const graphqlHTTP = require("express-graphql");
 const schema = require("./schema/schema");
 const mongoose = require("mongoose");
 require("dotenv").config({ path: ".env.development" });
+const cors = require("cors");
 
 const app = express();
+
+// cors policies
+app.use(cors());
 
 // connect with mlab
 const MONGODB_URI = "mongodb://127.0.0.1:27017/gql";
