@@ -20,7 +20,7 @@ class BookDetails extends Component {
         </div>
       );
     } else {
-      return <div>No book selected...</div>;
+      return <h3>No book selected...</h3>;
     }
   }
 
